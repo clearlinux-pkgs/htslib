@@ -1,0 +1,5 @@
+1.10.1
+bzip2-dev
+curl-dev
+pkgconfig(zlib)
+xz-dev
