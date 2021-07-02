@@ -31,6 +31,7 @@ libhts.so.3:bam_mplp_init
 libhts.so.3:bam_mplp_init_overlaps
 libhts.so.3:bam_mplp_reset
 libhts.so.3:bam_mplp_set_maxcnt
+libhts.so.3:bam_parse_cigar
 libhts.so.3:bam_plp64_auto
 libhts.so.3:bam_plp64_next
 libhts.so.3:bam_plp_auto
@@ -44,6 +45,7 @@ libhts.so.3:bam_plp_push
 libhts.so.3:bam_plp_reset
 libhts.so.3:bam_plp_set_maxcnt
 libhts.so.3:bam_read1
+libhts.so.3:bam_set1
 libhts.so.3:bam_set_qname
 libhts.so.3:bam_str2flag
 libhts.so.3:bam_write1
@@ -254,6 +256,7 @@ libhts.so.3:fai_load3
 libhts.so.3:fai_load3_format
 libhts.so.3:fai_load_format
 libhts.so.3:fai_parse_region
+libhts.so.3:fai_path
 libhts.so.3:fai_set_cache_size
 libhts.so.3:faidx_fetch_nseq
 libhts.so.3:faidx_fetch_qual
@@ -272,7 +275,10 @@ libhts.so.3:hfile_add_scheme_handler
 libhts.so.3:hfile_always_local
 libhts.so.3:hfile_always_remote
 libhts.so.3:hfile_destroy
+libhts.so.3:hfile_has_plugin
 libhts.so.3:hfile_init
+libhts.so.3:hfile_list_plugins
+libhts.so.3:hfile_list_schemes
 libhts.so.3:hfile_mem_get_buffer
 libhts.so.3:hfile_mem_steal_buffer
 libhts.so.3:hfile_oflags
@@ -294,7 +300,12 @@ libhts.so.3:hts_close
 libhts.so.3:hts_detect_format
 libhts.so.3:hts_drand48
 libhts.so.3:hts_erand48
+libhts.so.3:hts_feature_string
+libhts.so.3:hts_features
 libhts.so.3:hts_file_type
+libhts.so.3:hts_filter_eval
+libhts.so.3:hts_filter_free
+libhts.so.3:hts_filter_init
 libhts.so.3:hts_format_description
 libhts.so.3:hts_format_file_extension
 libhts.so.3:hts_free
@@ -335,6 +346,7 @@ libhts.so.3:hts_json_snext
 libhts.so.3:hts_json_sskip_value
 libhts.so.3:hts_json_token_str
 libhts.so.3:hts_json_token_type
+libhts.so.3:hts_lib_shutdown
 libhts.so.3:hts_log
 libhts.so.3:hts_lrand48
 libhts.so.3:hts_md5_destroy
@@ -362,11 +374,13 @@ libhts.so.3:hts_reglist_free
 libhts.so.3:hts_resize_array_
 libhts.so.3:hts_set_cache_size
 libhts.so.3:hts_set_fai_filename
+libhts.so.3:hts_set_filter_expression
 libhts.so.3:hts_set_log_level
 libhts.so.3:hts_set_opt
 libhts.so.3:hts_set_thread_pool
 libhts.so.3:hts_set_threads
 libhts.so.3:hts_srand48
+libhts.so.3:hts_test_feature
 libhts.so.3:hts_tpool_delete_result
 libhts.so.3:hts_tpool_destroy
 libhts.so.3:hts_tpool_dispatch
@@ -382,6 +396,7 @@ libhts.so.3:hts_tpool_process_detach
 libhts.so.3:hts_tpool_process_empty
 libhts.so.3:hts_tpool_process_flush
 libhts.so.3:hts_tpool_process_init
+libhts.so.3:hts_tpool_process_is_shutdown
 libhts.so.3:hts_tpool_process_len
 libhts.so.3:hts_tpool_process_qsize
 libhts.so.3:hts_tpool_process_ref_decr
@@ -485,7 +500,9 @@ libhts.so.3:sam_itr_regions
 libhts.so.3:sam_open_mode
 libhts.so.3:sam_open_mode_opts
 libhts.so.3:sam_parse1
+libhts.so.3:sam_parse_cigar
 libhts.so.3:sam_parse_region
+libhts.so.3:sam_passes_filter
 libhts.so.3:sam_prob_realn
 libhts.so.3:sam_read1
 libhts.so.3:sam_write1
@@ -504,6 +521,7 @@ libhts.so.3:tbx_seqnames
 libhts.so.3:vcf_format
 libhts.so.3:vcf_hdr_read
 libhts.so.3:vcf_hdr_write
+libhts.so.3:vcf_open_mode
 libhts.so.3:vcf_parse
 libhts.so.3:vcf_read
 libhts.so.3:vcf_write
