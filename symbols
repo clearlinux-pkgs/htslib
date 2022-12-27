@@ -22,6 +22,10 @@ libhts.so.3:bam_flag2str
 libhts.so.3:bam_hdr_read
 libhts.so.3:bam_hdr_write
 libhts.so.3:bam_init1
+libhts.so.3:bam_mods_at_next_pos
+libhts.so.3:bam_mods_at_qpos
+libhts.so.3:bam_mods_query_type
+libhts.so.3:bam_mods_recorded
 libhts.so.3:bam_mplp64_auto
 libhts.so.3:bam_mplp_auto
 libhts.so.3:bam_mplp_constructor
@@ -31,6 +35,8 @@ libhts.so.3:bam_mplp_init
 libhts.so.3:bam_mplp_init_overlaps
 libhts.so.3:bam_mplp_reset
 libhts.so.3:bam_mplp_set_maxcnt
+libhts.so.3:bam_next_basemod
+libhts.so.3:bam_parse_basemod
 libhts.so.3:bam_parse_cigar
 libhts.so.3:bam_plp64_auto
 libhts.so.3:bam_plp64_next
@@ -40,6 +46,7 @@ libhts.so.3:bam_plp_destroy
 libhts.so.3:bam_plp_destructor
 libhts.so.3:bam_plp_init
 libhts.so.3:bam_plp_insertion
+libhts.so.3:bam_plp_insertion_mod
 libhts.so.3:bam_plp_next
 libhts.so.3:bam_plp_push
 libhts.so.3:bam_plp_reset
@@ -73,6 +80,8 @@ libhts.so.3:bcf_get_variant_type
 libhts.so.3:bcf_get_variant_types
 libhts.so.3:bcf_gt_type
 libhts.so.3:bcf_has_filter
+libhts.so.3:bcf_has_variant_type
+libhts.so.3:bcf_has_variant_types
 libhts.so.3:bcf_hdr_add_hrec
 libhts.so.3:bcf_hdr_add_sample
 libhts.so.3:bcf_hdr_append
@@ -154,6 +163,7 @@ libhts.so.3:bcf_update_format
 libhts.so.3:bcf_update_format_string
 libhts.so.3:bcf_update_id
 libhts.so.3:bcf_update_info
+libhts.so.3:bcf_variant_length
 libhts.so.3:bcf_write
 libhts.so.3:bgzf_block_write
 libhts.so.3:bgzf_check_EOF
@@ -213,6 +223,7 @@ libhts.so.3:cram_container_set_length
 libhts.so.3:cram_container_set_num_blocks
 libhts.so.3:cram_container_size
 libhts.so.3:cram_copy_slice
+libhts.so.3:cram_decode_slice_header
 libhts.so.3:cram_dopen
 libhts.so.3:cram_eof
 libhts.so.3:cram_fd_get_fp
@@ -224,6 +235,7 @@ libhts.so.3:cram_fd_set_version
 libhts.so.3:cram_flush
 libhts.so.3:cram_free_block
 libhts.so.3:cram_free_container
+libhts.so.3:cram_free_slice_header
 libhts.so.3:cram_get_refs
 libhts.so.3:cram_major_vers
 libhts.so.3:cram_minor_vers
@@ -236,6 +248,9 @@ libhts.so.3:cram_seek
 libhts.so.3:cram_set_header
 libhts.so.3:cram_set_option
 libhts.so.3:cram_set_voption
+libhts.so.3:cram_slice_hdr_get_coords
+libhts.so.3:cram_slice_hdr_get_embed_ref_id
+libhts.so.3:cram_slice_hdr_get_num_blocks
 libhts.so.3:cram_store_container
 libhts.so.3:cram_transcode_rg
 libhts.so.3:cram_uncompress_block
@@ -295,17 +310,22 @@ libhts.so.3:hputs2
 libhts.so.3:hread2
 libhts.so.3:hrec_add_idx
 libhts.so.3:hseek
+libhts.so.3:hts_base_mod_state_alloc
+libhts.so.3:hts_base_mod_state_free
 libhts.so.3:hts_check_EOF
 libhts.so.3:hts_close
 libhts.so.3:hts_detect_format
+libhts.so.3:hts_detect_format2
 libhts.so.3:hts_drand48
 libhts.so.3:hts_erand48
 libhts.so.3:hts_feature_string
 libhts.so.3:hts_features
 libhts.so.3:hts_file_type
 libhts.so.3:hts_filter_eval
+libhts.so.3:hts_filter_eval2
 libhts.so.3:hts_filter_free
 libhts.so.3:hts_filter_init
+libhts.so.3:hts_flush
 libhts.so.3:hts_format_description
 libhts.so.3:hts_format_file_extension
 libhts.so.3:hts_free
@@ -324,6 +344,7 @@ libhts.so.3:hts_idx_init
 libhts.so.3:hts_idx_load
 libhts.so.3:hts_idx_load2
 libhts.so.3:hts_idx_load3
+libhts.so.3:hts_idx_nseq
 libhts.so.3:hts_idx_push
 libhts.so.3:hts_idx_save
 libhts.so.3:hts_idx_save_as

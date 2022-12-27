@@ -3,3 +3,4 @@ Configure miss: libdeflate.h
 Configure miss: libdeflate_deflate_compress in -ldeflate
 Configure miss: library containing HMAC
 Configure miss: srand48_deterministic
+Configure miss: whether C compiler supports ARM Neon
