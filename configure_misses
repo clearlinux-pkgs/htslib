@@ -1,6 +1,19 @@
+Configure miss: C compiler flags needed for avx2
+Configure miss: C compiler flags needed for sse4.1
+Configure miss: C compiler flags needed for sse4.1
 Configure miss: CCHmac
+Configure miss: CCHmac
+Configure miss: gcc option to enable large file support
+Configure miss: gcc option to enable large file support
+Configure miss: gcc options needed to detect all undeclared functions
+Configure miss: gcc options needed to detect all undeclared functions
+Configure miss: libdeflate.h
 Configure miss: libdeflate.h
 Configure miss: libdeflate_deflate_compress in -ldeflate
+Configure miss: libdeflate_deflate_compress in -ldeflate
+Configure miss: library containing HMAC
 Configure miss: library containing HMAC
 Configure miss: srand48_deterministic
-Configure miss: whether C compiler supports ARM Neon
+Configure miss: srand48_deterministic
+Configure miss: whether _XOPEN_SOURCE is declared
+Configure miss: whether _XOPEN_SOURCE is declared
