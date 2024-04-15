@@ -10,6 +10,7 @@ libhts.so.3:HTSLIB_1.16
 libhts.so.3:HTSLIB_1.17
 libhts.so.3:HTSLIB_1.18
 libhts.so.3:HTSLIB_1.2.1
+libhts.so.3:HTSLIB_1.20
 libhts.so.3:HTSLIB_1.3
 libhts.so.3:HTSLIB_1.4
 libhts.so.3:HTSLIB_1.5
