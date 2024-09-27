@@ -11,8 +11,6 @@ Configure miss: libdeflate.h
 Configure miss: libdeflate.h
 Configure miss: libdeflate_deflate_compress in -ldeflate
 Configure miss: libdeflate_deflate_compress in -ldeflate
-Configure miss: library containing HMAC
-Configure miss: library containing HMAC
 Configure miss: srand48_deterministic
 Configure miss: srand48_deterministic
 Configure miss: whether _XOPEN_SOURCE is declared
